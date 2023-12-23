@@ -77,7 +77,7 @@ def delete_a_blog(
     id: int,
     db: Session = Depends(get_db),
     current_user: User = Depends(get_current_user),
-) -> dict[str:str]:
+):
     """
     Route method to delete a blog.
     """

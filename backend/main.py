@@ -28,6 +28,6 @@ app = start_application()
 
 
 @app.get("/")
-def home() -> dict[str:str]:
+def home():
     """root api function."""
     return {"msg": "Hello FastAPI"}
